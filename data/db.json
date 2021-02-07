@@ -1,0 +1,16 @@
+{
+  "post": [
+    {
+      "title": "第二篇文章",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse suscipit ullam inventore nisi. Facere quas eius fugiat labore nihil aperiam, eligendi ab ipsam quis ipsum architecto facilis, unde sapiente.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse suscipit ullam inventore nisi. Facere quas eius fugiat labore nihil aperiam, eligendi ab ipsam quis ipsum architecto facilis, unde sapiente.",
+      "likes": 213,
+      "id": 2
+    },
+    {
+      "title": "第三篇文章",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse suscipit ullam inventore nisi. Facere quas eius fugiat labore nihil aperiam, eligendi ab ipsam quis ipsum architecto facilis, unde sapiente.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse suscipit ullam inventore nisi. Facere quas eius fugiat labore nihil aperiam, eligendi ab ipsam quis ipsum architecto facilis, unde sapiente.",
+      "likes": 223,
+      "id": 3
+    }
+  ]
+}
