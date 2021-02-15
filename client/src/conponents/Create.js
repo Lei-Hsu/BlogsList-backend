@@ -12,8 +12,8 @@ function Create() {
   };
   const handleCreate = (e) => {
     e.preventDefault();
-    const blogs = { title, content, id: 0 };
-    fetch("http://localhost:8080/post", {
+    const blogs = { title, content };
+    fetch("http://localhost:8080/create", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -26,7 +26,6 @@ function Create() {
     <div>
       <nav className="navbar">
         <h1>Create New Blog</h1>
-        <Link to="/"> go back</Link>
       </nav>
       <div className="form">
         <input
@@ -44,9 +43,12 @@ function Create() {
           placeholder="content..."
           onChange={handleInputContent}
         ></textarea>
-        <button className="createBtn" onClick={handleCreate}>
-          Create
-        </button>
+        <div className="checkBox">
+          <button className="createBtn" onClick={handleCreate}>
+            新增
+          </button>
+          <Link to="/">取消</Link>
+        </div>
       </div>
     </div>
   );
