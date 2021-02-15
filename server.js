@@ -8,6 +8,7 @@ const detail = require("./controllers/detail");
 const createPost = require("./controllers/createPost");
 const utility = require("./controllers/utility");
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const db = knex({
   client: "pg",
   connection: {
