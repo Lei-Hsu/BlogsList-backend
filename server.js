@@ -11,7 +11,7 @@ const utility = require("./controllers/utility");
 const db = knex({
   client: "pg",
   connection: {
-    connectionString: process.env.DATABASE,
+    connectionString: process.env.DATABASE_URL,
     ssl: true,
   },
 });
