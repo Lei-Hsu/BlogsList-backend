@@ -10,7 +10,7 @@ import useFetch from "./customhooks/useFetch";
 function App() {
   const [blogs, setBlogs] = useState(null);
   //用客製化的hook fetch server
-  useFetch("http://localhost:8080/", setBlogs);
+  useFetch("https://blogslist.herokuapp.com/", setBlogs);
   return (
     <>
       <BrowserRouter>

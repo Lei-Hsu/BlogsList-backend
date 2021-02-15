@@ -13,7 +13,7 @@ function Create() {
   const handleCreate = (e) => {
     e.preventDefault();
     const blogs = { title, content };
-    fetch("http://localhost:8080/create", {
+    fetch("https://blogslist.herokuapp.com/create", {
       method: "POST",
       headers: {
         "content-type": "application/json",

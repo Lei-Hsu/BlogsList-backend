@@ -5,7 +5,7 @@ function Detail() {
   let { id } = useParams();
   const [blogs, setBlogs] = useState(null);
   useEffect(() => {
-    fetch(`http://localhost:8080/detail/${id}`)
+    fetch(`https://blogslist.herokuapp.com/detail/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data);
@@ -13,14 +13,14 @@ function Detail() {
   }, [id]);
   const handleClick = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:8080/detail/${id}`, {
+    fetch(`https://blogslist.herokuapp.com/detail/${id}`, {
       method: "DELETE",
     });
     window.location.replace("/");
   };
   const handleLikeClick = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:8080/detail/${id}`, {
+    fetch(`https://blogslist.herokuapp.com/detail/${id}`, {
       method: "PUT",
     });
     window.location.replace("/");
@@ -28,7 +28,7 @@ function Detail() {
   //修改區
   const [oldBlogs, setOldBlogs] = useState();
   useEffect(() => {
-    fetch(`http://localhost:8080/detail/${id}`)
+    fetch(`https://blogslist.herokuapp.com/detail/${id}`)
       .then((res) => res.json())
       .then((blogs) => setOldBlogs(blogs));
   }, [blogs, id]);
@@ -44,7 +44,7 @@ function Detail() {
   const handleChange = (e) => {
     e.preventDefault();
     const blogs = { title, content };
-    fetch(`http://localhost:8080/detail/${id}/change`, {
+    fetch(`https://blogslist.herokuapp.com/detail/${id}/change`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
